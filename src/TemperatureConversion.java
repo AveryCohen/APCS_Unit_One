@@ -1,8 +1,8 @@
 public class TemperatureConversion {
 
     public static void main(String[] args) {
-        double fahrenheit = 78, celsius = (fahrenheit - 30) / 2;
-        System.out.println(fahrenheit + " degrees F is " + celsius + " degrees C");
+        double fahrenheit = 78, celsius = ((fahrenheit - 32) * 5) / 9;
+        System.out.println("78 degrees Fahrenheit is " + celsius + " degrees Celsius");
 
         // Create a variable of the appropriate type and initialize to to 78 degrees
 
