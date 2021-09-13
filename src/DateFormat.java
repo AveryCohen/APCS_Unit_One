@@ -9,9 +9,9 @@ public class DateFormat {
         System.out.println("What is the current day of the week?");
         String dayW = scan.nextLine();
         System.out.println("What is the current year?");
-        String year = scan.nextLine();
+        Integer year = scan.nextInt();
         System.out.println("What is the current day of the month?");
-        String dayM = scan.nextLine();
+        Integer dayM = scan.nextInt();
 
         System.out.println("American Format:");
         System.out.println(dayW + ", " + month + " " + dayM + ", " + year);
