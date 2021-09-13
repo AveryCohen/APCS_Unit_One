@@ -52,14 +52,14 @@ public class UserInputTests {
     @Test
     void correctChangeExample() throws IOException {
         System.setIn(new FileInputStream("data_files/uione.txt"));
-        CorrectChange.main(null);
+        correctChange.main(null);
         assertTrue(outContent.toString().contains("You have 1 dollars, 2 quarters, 1 dimes, 0 nickels, and 3 pennies."), "");
     }
 
     @Test
     void correctChangeQuarterPenny() throws IOException {
         System.setIn(new FileInputStream("data_files/uitwo.txt"));
-        CorrectChange.main(null);
+        correctChange.main(null);
         assertTrue(outContent.toString().contains("You have 6 dollars, 0 quarters, 0 dimes, 0 nickels, and 4 pennies."), "");
     }
 
