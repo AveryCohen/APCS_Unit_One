@@ -52,14 +52,14 @@ public class UserInputTests {
     @Test
     void correctChangeExample() throws IOException {
         System.setIn(new FileInputStream("data_files/uione.txt"));
-        correctChange.main(null);
+        CorrectChange.main(null);
         assertTrue(outContent.toString().contains("You have 1 dollars, 2 quarters, 1 dimes, 0 nickels, and 3 pennies."), "");
     }
 
     @Test
     void correctChangeQuarterPenny() throws IOException {
         System.setIn(new FileInputStream("data_files/uitwo.txt"));
-        correctChange.main(null);
+        CorrectChange.main(null);
         assertTrue(outContent.toString().contains("You have 6 dollars, 0 quarters, 0 dimes, 0 nickels, and 4 pennies."), "");
     }
 
@@ -74,7 +74,7 @@ public class UserInputTests {
     void separatingDigitsDecending() throws IOException {
         System.setIn(new FileInputStream("data_files/uifour.txt"));
         SeparatingDigits.main(null);
-        assertTrue(outContent.toString().contains("8 6 7 5 4"), "");
+        assertTrue(outContent.toString().contains("8 7 6 5 4"), "");
     }
 
 

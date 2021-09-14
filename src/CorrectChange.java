@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class correctChange {
+public class CorrectChange {
 
     public static void main(String[] args) {
 
@@ -20,7 +20,7 @@ public class correctChange {
         nickelRemain = dimeRemain % 5;
         penny = nickelRemain / 1;
 
-        System.out.println("You have " + dollar + " dollars, " + quarter + " quarters, " + dime + " dimes, " + nickel + " nickels, " + penny + " pennies.");
+        System.out.println("You have " + dollar + " dollars, " + quarter + " quarters, " + dime + " dimes, " + nickel + " nickels, and " + penny + " pennies.");
 
     }
 }
