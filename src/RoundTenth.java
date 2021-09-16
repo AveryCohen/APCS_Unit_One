@@ -4,6 +4,12 @@ public class RoundTenth {
 
     public static void main(String[] args)
     {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Decimal number? ");
+        double unroundedNumber = scan.nextDouble();
+        double roundedNumber = (double)(unroundedNumber + 0.05);
+        System.out.println(unroundedNumber + " rounded to the nearest tenth is " + String.format("%.01f", roundedNumber));
+
         // Create a Scanner object
 
         // Prompt the user for a positive decimal number
