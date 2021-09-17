@@ -6,9 +6,9 @@ public class RoundTenth {
     {
         Scanner scan = new Scanner(System.in);
         System.out.print("Decimal number? ");
-        double unroundedNumber = scan.nextDouble();
-        double roundedNumber = (double)(unroundedNumber + 0.05);
-        System.out.println(unroundedNumber + " rounded to the nearest tenth is " + String.format("%.01f", roundedNumber));
+        double unrounded = scan.nextDouble();
+        double rounded = (double)(unrounded + 0.05);
+        System.out.println(unrounded + " rounded to the nearest tenth is " + String.format("%.01f", rounded));
 
         // Create a Scanner object
 
