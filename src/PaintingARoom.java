@@ -21,7 +21,7 @@ public class PaintingARoom {
         int ceiling = length * width;
         int surfaceArea = (wallsL + wallsW + ceiling) - windows - doors;
         double gallonsDouble = surfaceArea / 350.0;
-        int gallonsInt = (int)(-(-gallonsDouble)/1);
+        int gallonsInt = (int)(gallonsDouble + 0.999999999999999);
         System.out.println("For a room of " + surfaceArea + "square feet, you should buy " + gallonsInt + " gallons of paint.");
 
 
